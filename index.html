@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/fruta.ico">
+
+    <title>Frutas Salgueiro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/product.css" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+
+
+    <style type="text/css" media="screen">
+      #map-canvas{
+        width: 100%;
+        height: 350px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md nav-justified navbar-dark">
+        <a class="navbar-brand" href="#">Frutas Salgueiro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+              <a class="nav-item nav-link" href="#whereis">Dónde estamos</a>
+              <a class="nav-item nav-link" href="#">Productos</a>
+              <a class="nav-item nav-link" href="#">Eventos</a>
+              <a class="nav-item nav-link" href="#">Contacto</a>
+              <a class="nav-item nav-link" href="#">Quiénes somos</a>
+        </div>
+      </nav>
+
+    </header>
+
+    <main role="main">
+
+ <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
+<!--
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+-->
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" >
+            <img class="first-slide opaco" src="./img/fresas.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-center">
+
+                <h1 class="animated flipInX">Frutas Salgueiro</h1>
+                <p class="animated lightSpeedIn">Levándoche a mellor froita a túa casa desde hai máis de 25 anos.</br></br></br></br></br></br></br></p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="position: absolute; top:0px; width: 100% ; height: 100%">
+            <img class="second-slide opaco" src="./img/cerezas.jpg"  alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="position: absolute; top:0px; width: 100% ; height: 100%">
+            <img class="third-slide opaco" src="./img/melocotones.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+<!--
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+-->
+      </div>
+ 
+
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="animatedParent container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div id="whereis" class="row featurette" data-id="2">
+          <div class="col-md-7 wow animated slideInLeft">
+            <h2 class="featurette-heading">¿Dónde estamos? <span class="text-muted"></span></h2>
+            <p class="lead">Movémonos de luns a sábado pola comarca do Salnés, desde Cambados ata O Grove, pasando por Portonovo e Dena.
+            Ademáis nos podes atopar no noso almacén local, en Viliquín.</p>
+          </div>
+          <div class="col-md-5 wow animated slideInRight">
+             <div id="map-canvas" class=""></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2 wow animated fadeInRight">
+            <h2 class="featurette-heading">Regala fruta! <span class="text-muted">Mira as nosas cestas</span></h2>
+            <p class="lead">As nosas cestas, aparte de levar o mesmo producto que vendemos de máxima calidade, ofrécenche a posibilidade de regalar
+            algo orixinal, saudable e que seguro degustarán o destinatarios. Anímate a regalar algunha das nosas cestas, poderás personalizala e adecuala
+            ao teu presuposto.</p>
+          </div>
+          <div class="col-md-5 order-md-1 wow animated fadeInLeft">
+
+            <div id="myCarousel2" class="carousel carousel-fade" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="first-slide" src="./img/melocotones.jpg" alt="First slide">
+                  <div class="container">
+
+                  </div>
+                </div>
+                <div class="carousel-item" style="position: absolute; top:0px; width: 100% ; height: 100%">
+                  <img class="first-slide" src="./img/cerezasuvas.jpg" alt="First slide">
+                  <div class="container">
+
+                  </div>
+                </div>
+                <div class="carousel-item" style="position: absolute; top:0px; width: 100% ; height: 100%">
+                  <img class="first-slide" src="./img/mandarinas.jpg" alt="First slide">
+                  <div class="container">
+
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 wow animated fadeInLeft">
+            <h2 class="featurette-heading">Tamén en eventos. <span class="text-muted">Bodas, cumpleanos, etc.</span></h2>
+            <p class="lead">Despois dun bo banquete ou simplemente despois dunha pequena cea, ¿a quén non lle apetece picar froita fresca? Ademáis 
+            de decorar e darlle cor ao evento, os invitados sempre quedan encantados coas nosas brochetas de froita!.</p>
+          </div>
+          <div class="col-md-5 wow animated fadeInRight">
+            <img class="featurette-image img-fluid mx-auto" width="450" height="350" src="./img/mesa3.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4 wow animated fadeInUp">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Lola</h2>
+            <p>Fundadora da froitería, empezou vendendo en pequenos mercados ata ir medrando pouco a pouco e converter nunha empresa solvente 
+            na que confiar á hora de aconsellarche levar a mellor calidade.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 wow animated fadeInUp" data-wow-delay="0.5s">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Ana</h2>
+            <p>Filla e actual responsable, foi un paso máis alá e fixo da froita non so algo habitual e cotidiano no teu día a día, si non algo especial, 
+            levando a fabulosos eventes magníficas demostracións de beleza e sabor.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 wow animated fadeInUp" data-wow-delay="1s">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Lucía</h2>
+            <p>Axudante máis sorrinte que podrás encontrar, atendarate da mellor maneira que te poidas imaxinar e cunha dosis sempre de humor sexa a hora que sexa e faga o tempo que faga.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Volver arriba</a></p>
+        <p>&copy; 1980-2018 Frutas Salgueiro. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+      <!-- JavaScript de Bootstrap y JQuery-->
+      <script src="./js/jquery-3.3.1.min.js"></script>
+      <script src="./js/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+
+      <script src="./js/bootstrap/bootstrap.js"></script>
+      <!-- Script para mapas -->
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCBEEfVNLGFMH6GTdW0ho5CSMh3ysE9Pbg&?sensor=false"></script>
+      <script src="./js/mapa.js" type="text/javascript" charset="utf-8"></script>
+
+      <script src="./js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
+  </body>
+</html>
