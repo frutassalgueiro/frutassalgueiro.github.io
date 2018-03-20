@@ -35,13 +35,13 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  font-family:  Verdana  serif fantasy;
+  font-family:   serif Verdana fantasy;
   background-color: rgb(160, 240, 80);
   color: #5a5a5a;
 }
 
 h1 {
-  font-family:  Verdana serif fantasy;
+  font-family:  serif Verdana fantasy;
   font-size: 80px;  
 } 
 /* CUSTOMIZE THE CAROUSEL
