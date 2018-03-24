@@ -7,18 +7,24 @@
 <meta name="keywords" content="css animation, loading effect, animate, scroll loading, scroll animation" />
 <meta name="author" content="Jinson Abraham" />
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> 
-<link rel="stylesheet" type="text/css" href="./css/animate.css" />
+
 <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+
+<link rel="stylesheet" type="text/css" href="./css/onepage-scroll.css" />
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
 
 <body>
 
+
+<div class="main">
+<!--
+
 <div class="topbar">
   <a href="http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animate-css-and-jquery">Back to the article</a>
 </div>
-
-<div class="container">
 
   <header class="top">
     
@@ -29,78 +35,70 @@
       <li> <a href="https://github.com/dirkgroenen/jQuery-viewport-checker">Viewport Checker</a> </li>
     </ul>
   </header>
-
-  <div id="ex1" class="foo">
+-->
+<section >
+  <div id="ex1" class="aniview" data-av-animation="slideInRight">
     <span class="icon fa fa-beer"> </span>
     <h2> Lorem ipsum dolor sit amet, consetetur sadipscing elitr. </h2>
     <p>  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
   </div>
-  
-  <div id="ex2" class="foo">
+</section>
+
+<section>
+  <div id="ex2" class="aniview" data-av-animation="slideInRight">
     <span class="icon fa fa-anchor"> </span>
     <h2> Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
     <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
   </div>
-  
-  <div id="ex3" class="foo">
+</section>
+
+<section >
+  <div id="ex3" class="aniview" data-av-animation="slideInRight">
     <span class="icon fa fa-camera-retro"> </span>
     <h2> Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
     <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
   </div>
-  
-  <div id="ex4" class="foo">
-    <span class="icon fa fa-cloud-download"> </span>
-    <h2> Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h2>
-    <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-  </div>
-  
+</section>
 
+</div>
 
-
-    
+<!--    
 <footer class="footer">
   Tutorial created by <a href="http://www.web2feel.com/">Jinson Abraham</a>
- 
 </footer>
-  
+  -->
 </div>
 
 
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"/>
+<script src="./js/jquery.onepage-scroll.min.js"></script>
 <script>
-  /*
-// 'bottom', 'left', 'top', 'right'
-origin: 'bottom',
 
-// Can be any valid CSS distance, e.g. '5rem', '10%', '20vw', etc.
-distance: '20px',
+$(".main").onepage_scroll({
+   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+   loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   keyboard: true,                  // You can activate the keyboard controls
+   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                    // the browser's width is less than 600, the fallback will kick in.
+   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+});
+</script>
+<script>
+$(document).ready(function(){
 
-// Time in milliseconds.
-duration: 500,
-delay: 0,
+            $('.aniview').AniView();
 
-// Starting angles in degrees, will transition from these values to 0 in all axes.
-rotate: { x: 0, y: 0, z: 0 },
-
-// Starting opacity value, before transitioning to the computed opacity.
-opacity: 0,
-
-// Starting scale value, will transition from this value to 1
-scale: 0.9,
-
-// Accepts any valid CSS easing, e.g. 'ease', 'ease-in-out', 'linear', etc.
-easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
-  */
-
-// Changing the defaults
-window.sr = ScrollReveal({ reset: false });
-
-// Customizing a reveal set
-sr.reveal('.foo', { origin: 'left',
-                    opacity: 0.1,
-                    distance: '500px',
-                    duration: 500});
+});
 
 </script>
 

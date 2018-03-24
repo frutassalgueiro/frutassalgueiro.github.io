@@ -27,55 +27,62 @@ window.sr = ScrollReveal({ reset: false });
 
 // Customizing a reveal set
 sr.reveal('.flipInX', { 
-					origin: 'top',
-                    opacity: 1,
+				origin: 'top',
+                    opacity: 0,
                     rotate: { x: 360, y: 0, z: 0 },
                     duration: 700});
 
+sr.reveal('.flipInY', { 
+                    origin: 'top',
+                    opacity: 0,
+                    rotate: { x: 0, y: 360, z: 0 },
+                    duration: 700,
+                    delay: 500});
+
 sr.reveal('.fadeInLeft', { origin: 'left',
-                    opacity: 0.1,
-                    distance: '500px',
+                    opacity: 0,
+                    distance: '25px',
                     duration: 700});
 
 sr.reveal('.fadeInRight', { origin: 'right',
-                    opacity: 0.1,
-                    distance: '500px',
+                    opacity: 0,
+                    distance: '25px',
                     duration: 700});
 
 sr.reveal('.fadeInDown1', { origin: 'left',
-                    opacity: 0.1,
-                    distance: '500px',
+                    opacity: 0,
+                    distance: '25px',
                     duration: 700});
 
 sr.reveal('.rotate1', { 
-                    opacity: 0.1,
+                    opacity: 0,
                     rotate: { x: 0, y: 0, z: 360 },
-                    distance: '300px',
+                    distance: '25px',
                     duration: 800,
                     delay: 100,});
 
 sr.reveal('.fadeInDown2', { origin: 'bottom',
-                    opacity: 0.1,
-                    distance: '500px',
+                    opacity: 0,
+                    distance: '25px',
                     duration: 700,
                     delay: 500});
 
 sr.reveal('.rotate2', { 
-                    opacity: 0.1,
+                    opacity: 0,
                     rotate: { x: 0, y: 0, z: -360 },
-                    distance: '300px',
+                    distance: '25px',
                     duration: 800,
-                    delay: 600,});
+                    delay: 550,});
 
 sr.reveal('.fadeInDown3', { origin: 'right',
-                    opacity: 0.1,
-                    distance: '500px',
+                    opacity: 0,
+                    distance: '25px',
                     duration: 700,
                     delay: 1000});
 
 sr.reveal('.rotate3', { 
-                    opacity: 0.1,
+                    opacity: 0,
                     rotate: { x: 0, y: 0, z: 360 },
-                    distance: '300px',
+                    distance: '25px',
                     duration: 800,
-                    delay: 1100,});
+                    delay: 1050,});
