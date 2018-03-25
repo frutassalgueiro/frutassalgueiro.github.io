@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Volkhov:400italic,700);
+
 .navbar {
   background-color: rgba(0, 135, 0, .95);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -35,16 +37,38 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  font-family: serif Verdana fantasy;
   background-color:rgb(240, 255, 200);
   color: #5a5a5a;
-
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-width: 320px;
 }
 
-h1 {
-  font-family: serif Verdana fantasy;
-  font-size: 70px;  
-} 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1, h2, h5 {
+  margin: 20px 20px 30px 20px;
+  font-size: 56px;
+  font-family: "Volkhov", serif;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #e0d1bc;
+}
+
+h1 span, h5 {
+  font-size: 18px;
+  display: block;
+  font-style: italic;
+  color: #997f5a;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px #fff;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -106,15 +130,7 @@ h1 {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-/*
-.row {
-  height: 100%
-}
 
-.marketing {
-  height: 100%
-}
-*/
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
