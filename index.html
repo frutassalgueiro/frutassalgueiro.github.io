@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es" style="height: 100%;">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,35 +11,51 @@
     <title>Frutas Salgueiro</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <!-- Custom styles for this template -->
-    <link href="./css/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/product.css">
     <!-- Custom styles for this template -->
-    <link href="./css/mapa.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mapa.css">
     <!-- Custom styles for sliders -->
-    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom styles for sliders -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- Custom styles for translate component -->
+    <link rel="stylesheet" href="./css/jquery.localizationTool.css">
+    <!-- Custom styles for icons fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
 
   </head>
 
   <body style="height: 100%;">
     <header>
-      <nav class="navbar navbar-expand-md nav-justified navbar-dark">
+    
+      <nav class="navbar navbar-expand-md nav-justified navbar-dark fixed-top">
         <a class="navbar-brand" href="">Frutas Salgueiro</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-              <a class="nav-item nav-link" href="#whereis">Dónde estamos</a>
-              <a class="nav-item nav-link" href="#basket">Cestas</a>
-              <a class="nav-item nav-link" href="#events">Eventos</a>
-              <a class="nav-item nav-link" href="#contac">Contacto</a>
-              <a class="nav-item nav-link" href="#whoami">Quiénes somos</a>
+              <div class="nav-item nav-link"><a href="#basket">Cestas</a></div>
+              <div class="nav-item nav-link"><a href="#events">Eventos</a></div>
+              <div class="nav-item nav-link"><a href="#whereis">Dónde estamos</a></div>
+              <div class="nav-item nav-link"><a href="#tips">Recetas y consejos</a></div>
+              <div class="nav-item nav-link">
+                <div class="localizationTool" id="widget"></div>
+                <a href="tel:+34617384147"><i class="fas fa-phone"></i></a>
+                <a style="margin-left: 5px" href="https://www.facebook.com/frutassalgueiro/"><i class="fab fa-facebook"></i></a> 
+                <a style="margin-left: 5px" href="https://api.whatsapp.com/send?phone=34617384147"><i class="fab fa-whatsapp"></i></a>
+              </div>
+
         </div>
       </nav>
 
     </header>
 
-  <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
+  <div id="myCarousel" class="carousel carousel-fade" data-ride="carousel" data-interval="2500">
   <!--
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -54,7 +71,7 @@
             <div class="carousel-caption text-center">
 
               <h1 class="flipInX">Frutas Salgueiro</h1>
-              <p class="flipInY">Levándoche a mellor froita a túa casa desde hai máis de 25 anos.</p>
+              <p class="flipInY">Llevando la mejor fruta a tu casa desde hace más de 25 años.</p>
               
             </div>
           </div>
@@ -66,7 +83,7 @@
             <div class="carousel-caption">
 
               <h1 class="flipInX">Frutas Salgueiro</h1>
-              <p class="flipInY">Levándoche a mellor froita a túa casa desde hai máis de 25 anos.</p>
+              <p class="flipInY">Llevando la mejor fruta a tu casa desde hace más de 25 años.</p>
               
             </div>
           </div>
@@ -78,7 +95,7 @@
             <div class="carousel-caption text-center">
 
               <h1 class="flipInX">Frutas Salgueiro</h1>
-              <p class="flipInY">Levándoche a mellor froita a túa casa desde hai máis de 25 anos.</p>
+              <p class="flipInY">Llevando la mejor fruta a tu casa desde hace más de 25 años.</p>
               
             </div>
           </div>
@@ -105,18 +122,17 @@
     <div class="row featurette">
       <div class="col-md-5 fadeInLeft">
 
-        <h2 class="featurette-heading">Regala fruta! <span class="text-muted">Mira as nosas cestas</span></h2>
-        <p class="lead">As nosas cestas, aparte de levar o mesmo producto que vendemos de máxima calidade, ofrécenche a posibilidade de regalar
-        algo orixinal, saudable e que seguro degustarán o destinatarios. Anímate a regalar algunha das nosas cestas, poderás personalizala e adecuala
-        ao teu presuposto.</p>
+        <h2 class="featurette-heading">Regala fruta! </h2><h4><span class="text-muted">Mira nuestras cestas</span></h4>
+        <p class="lead">Nuestras cestas, aparte de llevar el mismo producto que vendemos de máxima calidad, te ofrecen  la posibilidad de regalar algo original, saludable y que seguro degustarán los destinatarios. Anímate a regalar alguna de nuestras cestas, podrás personalizala y adecuala a tu presupuesto.</p>
 
       </div>
-      <div class="col-md-7 fadeInRight">
-        <ul class="bxsliderBaskets">
-           <li><img src="./img/melocotones.jpg"></li>
-           <li><img src="./img/cerezasuvas.jpg"></li>
-           <li><img src="./img/mandarinas.jpg"></li>
-        </ul>
+      <div class="col-md-7 order-md-1 fadeInRight">
+        <div class="galleria">
+          <img src="./img/cesta1.jpeg" data-title="Centro de brochetas" data-description="60 €" data-big="./img/cesta1.jpeg">
+          <img src="./img/cesta2.jpeg" data-title="Cesta mediana" data-description="35 €" data-big="./img/cesta2.jpeg">
+          <img src="./img/cesta3.jpeg" data-title="Centro de brocetas" data-description="50 €" data-big="./img/cesta3.jpeg">
+          <img src="./img/cesta4.jpeg" data-title="Cesta pequeña" data-description="35 €" data-big="./img/cesta4.jpeg">
+        </div>
       </div>
     </div>
 
@@ -125,18 +141,16 @@
     <div class="row featurette">
       <div class="col-md-5  order-md-2 fadeInLeft">
 
-        <h2 class="featurette-heading">Tamén en eventos: <span class="text-muted">Vodas, bautizos, cumpleanos...</span></h2>
-        <p class="lead">Despois dun bo banquete ou simplemente despois dunha pequena cea, ¿a quén non lle apetece picar froita fresca? Ademáis 
-        de decorar e darlle cor ao evento, os invitados sempre quedan encantados coas nosas brochetas de froita!.</p>
+        <h2 class="featurette-heading">También en eventos: </h2><h4><span class="text-muted">Bodas, bautizos, cumpleaños...</span></h4>
+        <p class="lead">Después de un buen banquete o simplemente después de una pequeña cena, ¿a quién non le apetece tomar fruta fresca? Además de decorar y darl color al evento, los invitados siempre quedan encantados con nuestras brochetas de fruta!</p>
 
       </div>
       <div class="col-md-7 order-md-1 fadeInRight">
-        <ul class="bxsliderEvents">
-           <li><img src="./img/mesa0.jpg"></li>
-           <li><img src="./img/mesa1.jpg"></li>
-           <li><img src="./img/mesa2.jpg"></li>
-           <li><img src="./img/mesa3.jpg"></li>
-        </ul>
+        <div class="galleria">
+           <img src="./img/mesa3.jpg" data-title="Mesa pequeña" data-description="600 €" data-big="./img/mesa3.jpg">
+           <img src="./img/mesa2.jpg" data-title="Mesa mediana" data-description="750 €" data-big="./img/mesa2.jpg" >
+           <img src="./img/mesa1.jpg" data-title="Mesa grande" data-description="900 €" data-big="./img/mesa1.jpg">
+        </div>
       </div>
     </div>
 
@@ -144,38 +158,120 @@
 
     <div class="row featurette">
       <div class="col-md-5 fadeInLeft">
-        <h2 class="featurette-heading">¿Onde estamos? <span class="text-muted"></span></h2>
-        <p class="lead">Movémonos de luns a sábado pola comarca do Salnés, desde Cambados ata O Grove, pasando por Portonovo e Dena.
-        Ademáis nos podes atopar no noso almacén local, en Viliquín.</p>
+        <h2 class="featurette-heading">¿Dónde estamos? </h2>
+        <p class="lead">Nos movemos de lunes a sábado por la comarca del Salnés, desde Cambados hasta O Grove, pasando por Portonovo y Dena. Además nos puedes encontrar en nuestro almacén local, en Viliquín.</p>
       </div>
       <div class="col-md-7 fadeInRight">
          <div id="map-canvas" class=""></div>
       </div>
     </div>
 
-    <hr id="whoami" class="featurette-divider">
+    <hr id="tips" class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
-    <div class="row">
-      <div class="col-lg-4 fadeInDown1">
-        <img class="rounded-circle rotate1" src="./img/mandarinas.jpg" width="140" height="140">
-        <h2>Lola</h2>
-        <p>Fundadora da froitería, empezou vendendo en pequenos mercados ata ir medrando pouco a pouco e converter nunha empresa solvente 
-        na que confiar á hora de aconsellarche levar a mellor calidade.</p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4 fadeInDown2">
-        <img class="rounded-circle rotate2" src="./img/mandarinas.jpg" width="140" height="140">
-        <h2>Ana</h2>
-        <p>Filla e actual responsable, foi un paso máis alá e fixo da froita non so algo habitual e cotidiano no teu día a día, si non algo especial, 
-        levando a fabulosos eventes magníficas demostracións de beleza e sabor.</p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4 fadeInDown3">
-        <img class="rounded-circle rotate3" src="./img/mandarinas.jpg" width="140" height="140">
-        <h2>Lucía</h2>
-        <p>Axudante máis sorrinte que podrás encontrar, atendarate da mellor maneira que te poidas imaxinar e cunha dosis sempre de humor sexa a hora que sexa e faga o tempo que faga.</p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+<div id="carouselTips" class="carousel slide fadeInDown2" data-ride="carousel" data-interval="4500">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div style="width: 100%"><h2>Smoothies</h2></div>
+        <div class="col-lg-4 animated fadeInLeft">
+          <img class="rounded-circle animated rotateIn" src="./img/smoothie-sandia.png" width="140" height="140">
+          <h5>Sandía</h5>
+          <p>2 tazas de sandía, 1 manzana, 1 pera, 1 puñado de espinaca fresca. Hojas de menta al gusto. Leche vegetal de avellana opcinal.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInUp">
+          <img class="rounded-circle animated rotateIn" src="./img/smoothie-frutosrojos.png" width="140" height="140">
+          <h5>Frutos rojos</h5>
+          <p>150g de fresas, 1/2 taza de frambuesas frescas o congeladas, 2/3 de taza de yogur natural, 1/3 taza de leche almendra o avena (Para 2 personas).</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInRight">
+          <img class="rounded-circle animated rotateIn" src="./img/smoothie-mango.png" width="140" height="140">
+          <h5>Piña y mango</h5>
+          <p>1/2 plátano, 1/2 mango, 3/4 taza de piña, 1/2 taza de yogur natural, 1/2 taza de leche de almendra.</p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div style="width: 100%"><h2>Más Smoothies</h2></div>
+        <div class="col-lg-4 animated fadeInLeft">
+          <img class="rounded-circle animated rotateIn" src="./img/smoothie-platano.png" width="140" height="140">
+          <h5>El smoothie de desayuno definitivo</h5>
+          <p>1 plátano maduro, 2 cucharadas grandes de copos de avena, 1 cucharada de semillas de lino, 150ml de leche de almendra o avena, 4 cucharadas de yogur natural probiótico o tu elección de yogur, 1/2 cucharadita de extracto de vainilla o de cacao en polvo. (Para una persona)</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInUp">
+          <img class="rounded-circle animated rotateIn" src="./img/smoothie-kiwi.png" width="140" height="140">
+          <h5>Ayudante a adelgazar</h5>
+          <p>2 kiwis, 1/2 plátano, 1/2 manzana, 1 taza de espinacas, 1/2 taza de yogur de vainilla o natural, 2 cucharadas de semillas de lino molidas (opcional).</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInRight">
+          <img class="rounded-circle animated rotateIn" src="./img/smoothie-detox.png" width="140" height="140">
+          <h5>Detox</h5>
+          <p>6 rodajas de pimiento verde, 1/2 manzana verde, 3 trocitos de brócoli, 2 hojas de lechuga rizada, 1 taza de espinacas, el zumo de 4 limas, 3 rodajas de calabacín, 1/2 pepino.</p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div style="width: 100%"><h2>Consejos</h2></div>
+        <div class="col-lg-4 animated fadeInLeft">
+          <img class="rounded-circle animated rotateIn" src="./img/merienda.png" width="140" height="140">
+          <h5>Mejor solas</h5>
+          <p>Consumir las frutas fuera de las comidas, a media mañana o a media tarde es lo ideal, o solas como desayuno (prestar atención en no mezclar dulces y ácidas)</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInUp">
+          <img class="rounded-circle animated rotateIn" src="./img/frutas-acidas.png" width="140" height="140">
+          <h5>Consumir las frutas ácidas o semi-ácidas siempre por la mañana</h5>
+          <p>Piña, ciruela, mora, frambuesa, grosella, naranja, lima, limón, membrillo, fresas, níspero, mandarina, tomate, uva, manzana verde, guayaba, pera, uva pasa, etc.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInRight">
+          <img class="rounded-circle animated rotateIn" src="./img/frutas-dulces.png" width="140" height="140">
+          <h5>Consumir las frutas dulces por la mañana o por la tarde</h5>
+          <p>Melón, plátano, sandía, manzana golden, ciruelas, uvas, albaricoque, chirimoya, caqui, grosella, granada, ciruela claudia, pera conferencia, etc.</p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div style="width: 100%"><h2>Más Consejos</h2></div>
+        <div class="col-lg-4 animated fadeInLeft">
+          <img class="rounded-circle animated rotateIn" src="./img/guarnicion.png" width="140" height="140">
+          <h5>Acompañante</h5>
+          <p>Combinar siempre las proteínas (carnes-huevos-pescados-aves) con verduras crudas o cocidas; los carbohidratos (pan-pastas-arroz-patatas) y legumbres (lentejas-garbanzos-guisantes) con verduras cocidas (calabaza, zanahoria, alcachofa, coliflor, guisantes, habas, maíz, remolacha)</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInUp">
+          <img class="rounded-circle animated rotateIn" src="./img/ensalada.png" width="140" height="140">
+          <h5>Complemento</h5>
+          <p>Utilice la piña, kiwi, fresa o naranja en tus ensaladas, aportarán no sólo color si no también un toque fresco y tropical que no te defraudará</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 animated fadeInRight">
+          <img class="rounded-circle animated rotateIn" src="./img/nevera.png" width="140" height="140">
+          <h5>Conservación</h5>
+          <p>Una buena conservación garantiza un buen consumo. El frigorífico, sólo cuando es necesario. Sacar de la nevera las frutas y verduras un tiempo antes de comerlas mejora el sabor y la textura. Colocar las frutas y hortalizas frescas en la parte más templada de refrigeración (la sección más baja)</p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+    
+  </div>
+
+
+  <a class="carousel-control-prev" href="#carouselTips" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselTips" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+
+
+
+
+     
 
   </div><!-- /.container -->
 
@@ -183,49 +279,29 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="">Volver arriba</a></p>
-    <p>&copy; 1980-2018 Frutas Salgueiro. &middot; <a href="">Privacy</a> &middot; <a href="">Terms</a></p>
+    <p>&copy; Frutas Salgueiro. &middot; 
+      <a href="https://goo.gl/maps/73BJ2RD2sE82" target="_blank"><i class="fas fa-home"></i> Lugar Viliquín 29 - Dena - CP:36967 (PO)</a>
+      <a href="tel:+34617384147"><i class="fas fa-phone"></i> Teléfono: (+34) 617 384 147</a>
+      <a style="margin-left: 5px" href="https://api.whatsapp.com/send?phone=34617384147"><i class="fab fa-whatsapp"></i> Whatsapp: (+34) 617 384 147</a>
+      <a style="margin-left: 5px" href="https://www.facebook.com/frutassalgueiro/"><i class="fab fa-facebook"></i> Frutas Salgueiro</a> 
+    </p>   
   </footer>
 
 
   <!-- JavaScript de Bootstrap y JQuery-->
-  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script> 
   <script src="./js/bootstrap/bootstrap.js"></script>
   <!-- JavaScript para mapas -->
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCBEEfVNLGFMH6GTdW0ho5CSMh3ysE9Pbg&?sensor=false"></script>
   <script src="./js/mapa.js" type="text/javascript" charset="utf-8"></script>
   <!-- JavaScript para efectos con scroll -->
   <script src="./js/scrollreveal.min.js"></script>
-  <!-- JavaScript para las opciones de la web -->
+  <!-- JavaScript para traductor -->
+  <script src="./js/jquery.localizationTool.js"></script>
+  <!-- JavaScript para sliders de imagenes -->  
+  <script src="./js/galleria/galleria-1.5.7.min.js"></script>
+  <!-- JavaScript con las opciones de la diferentes componentes de la web -->
   <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
-  <!-- JavaScript para sliders de imagenes -->
-  <script src="./js/jquery.bxslider.min.js"></script>
-
-<script>
-
-
-    $('.bxsliderBaskets').bxSlider({
-      auto: true,
-      autoControls: true,
-      controls: true,
-      stopAutoOnClick: true,
-      pager: true,
-      mode: 'fade',
-      speed: 1000,
-      slideWidth: 600
-    });
-
-    $('.bxsliderEvents').bxSlider({
-      auto: true,
-      autoControls: true,
-      controls: true,
-      stopAutoOnClick: true,
-      pager: true,
-      mode: 'fade',
-      speed: 1500
-    });
-    
-
-</script>
 
 </body>
 </html>

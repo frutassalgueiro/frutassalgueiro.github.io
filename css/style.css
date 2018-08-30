@@ -8,3 +8,5 @@ html, body {
   height: 300px;
   width: 400px;  
 }
+
+.galleria{ max-width: 600px; height: 500px; background: rgb(240, 255, 200);}
