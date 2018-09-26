@@ -10,3 +10,11 @@ html, body {
 }
 
 .galleria{ max-width: 600px; height: 500px; background: rgb(240, 255, 200);}
+
+.lead{
+	text-align : justify;
+}
+
+.justify{
+	text-align : justify;
+}
