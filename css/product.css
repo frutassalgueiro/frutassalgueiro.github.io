@@ -47,7 +47,7 @@
 body {
   background-color:rgb(240, 255, 200);
   color: #5a5a5a;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "Volkhov", serif;
   font-size: 13px;
   font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -60,9 +60,22 @@ a {
   text-decoration: none;
 }
 
+h1, h3 {
+  color: rgb(0, 100, 0);
+}
+
 h1, h2, h5 {
   margin: 20px 20px 30px 20px;
-  font-size: 56px;
+  font-size: 70px;
+  font-family: "Volkhov", serif;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #e0d1bc;
+}
+
+h3 {
+  margin: 20px 20px 30px 20px;
+  font-size: 30px;
   font-family: "Volkhov", serif;
   text-align: center;
   font-weight: 700;
@@ -134,7 +147,7 @@ h1 span, h5 {
 }
 
 .opaco {
-   opacity: 0.6;
+   opacity: 0.4;
 }
 
 .hidden {

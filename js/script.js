@@ -91,7 +91,7 @@ sr.reveal('.rotate3', {
 // function para galeria de imagenes
 
 (function() { 
-    Galleria.loadTheme('./js/galleria/themes/classic/galleria.classic.js');
+    Galleria.loadTheme('./js/galleria/themes/classic/galleria.classic.min.js');
     Galleria.run('.galleria',{
       transition: 'fade',
       imageCrop: false,
@@ -186,9 +186,9 @@ $("#widget").localizationTool({
            de_DE : "Rezepte und Tipps",
            pt_PT : "Receitas e dicas"
        },
-       "Regala fruta! " : {
+       "¡Regala fruta! " : {
            gl_ES : "Regala froita! ",  
-           es_ES : "Regala fruta! ",
+           es_ES : "¡Regala fruta! ",
            en_GB : "Give away fruit! ",
            de_DE : "Verschenke Früchte! ",
            pt_PT : "Dê frutos!! "
@@ -312,12 +312,12 @@ $("#widget").localizationTool({
            de_DE : "Entgiftung",
            pt_PT : "Desintoxicação"
        },
-       "Mejor solas" : {
-           gl_ES : "Mellor solas",  
-           es_ES : "Mejor solas",
-           en_GB : "Better alone",
-           de_DE : "Besser alleine",
-           pt_PT : "Melhor sozinho"
+       'Como dice el refrán: "Mejor solas que mal acompañadas"' : {
+           gl_ES : 'Como di o refrán: "Mellor solas que mal acompañadas"',  
+           es_ES : 'Como dice el refrán: "Mejor solas que mal acompañadas"',
+           en_GB : 'As the saying goes: "Better alone than badly accompanied"',
+           de_DE : 'Wie das Sprichwort sagt: "Besser allein als schlecht begleitet"',
+           pt_PT : 'Como diz o ditado: "Melhor sozinho do que mal acompanhado"'
        },
        "Detox" : {
            gl_ES : "Desintoxicante",  
