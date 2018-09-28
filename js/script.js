@@ -151,12 +151,12 @@ $("#widget").localizationTool({
            de_DE : "Früchte Salgueiro",
            pt_PT : "Frutas Salgueiro"
        },
-       "Llevando la mejor fruta a tu casa desde hace más de 25 años." : {
-           gl_ES : "Levando a mellor froita a túa casa desde hai máis de 25 anos.",  
-           es_ES : "Llevando la mejor fruta a tu casa desde hace más de 25 años.",
-           en_GB : "Taking the best fruit to your home from more 25 years ago.",
-           de_DE : "Die besten Früchte seit über 25 Jahren zu Ihnen nach Hause bringen.",
-           pt_PT : "Levando as melhores frutas para sua casa por mais de 25 anos."
+       "Llevando la mejor fruta a tu casa desde hace más de 25 años" : {
+           gl_ES : "Levando a mellor froita a túa casa desde hai máis de 25 anos",  
+           es_ES : "Llevando la mejor fruta a tu casa desde hace más de 25 años",
+           en_GB : "Taking the best fruit to your home from more 25 years ago",
+           de_DE : "Die besten Früchte seit über 25 Jahren zu Ihnen nach Hause bringen",
+           pt_PT : "Levando as melhores frutas para sua casa por mais de 25 anos"
        },
        "Cestas" : {
            gl_ES : "Cestas",  
