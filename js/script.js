@@ -228,23 +228,11 @@ $("#widget").localizationTool({
            de_DE : "Wir ziehen von Montag bis Samstag durch die Region Salnés, von Cambados nach O Grove, durch Portonovo und Dena. Sie können uns auch in unserem Geschäft in Viliquín finden. Überprüfen Sie diese Orte und mehr auf der folgenden Karte, wo Sie unseren Zeitplan an jedem Punkt finden",
             pt_PT : "Passamos de segunda a sábado pela região de Salnés, de Cambados a O Grove, passando por Portonovo e Dena. Você também pode nos encontrar em nossa loja local, em Viliquín. Verifique estes locais e muito mais no mapa a seguir, onde você encontrará nossa programação em cada ponto"
        },
-       "Más Smoothies" : {
-           gl_ES : "Máis Smoothies",  
-           en_GB : "More Smoothies",
-           de_DE : "Mehr Smoothies",
-           pt_PT : "Mais Smoothies"
-       },
        "Consejos" : {
            gl_ES : "Consellos",  
            en_GB : "Tips",
            de_DE : "Tipps",
            pt_PT : "Conselhos"
-       },
-       "Más Consejos" : {
-           gl_ES : "Máis Consellos",  
-           en_GB : "More Tips",
-           de_DE : "Mehr Tipps",
-           pt_PT : "Mais conselhos"
        },
        "Sandía" : {
            gl_ES : "Sandía",  
