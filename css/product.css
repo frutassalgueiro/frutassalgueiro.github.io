@@ -109,8 +109,12 @@ h1 span, h5 {
   text-shadow: 0px 1px 1px #fff;
 }
 
-.ml5 {
+.ml5px {
   margin-left: 5px;
+}
+
+.ml33 {
+  margin-left: 33%;
 }
 
 /* CUSTOMIZE THE CAROUSEL
