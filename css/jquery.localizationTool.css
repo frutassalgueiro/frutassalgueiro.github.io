@@ -795,8 +795,8 @@
   background: #8dc1e2;
 */
   position: relative;
-  width: 70%;
-  margin-left: 33%;
+  width: 150px;
+  margin-left: 30%;
 }
 .localizationTool .ltool-dropdown-label {
   /*
@@ -812,24 +812,26 @@
   margin-left: 0;
 }
 .localizationTool .ltool-dropdown-label .ltool-language-name {
-  color: #deedf7;
+  margin-right: 20px;
+  color: #ffffff;
 }
+
 .localizationTool .ltool-dropdown-label-arrow {
   /* the arrow */
-/*
+
   content: '';
   display: block;
   width: 0;
   height: 0;
-  border-top: 10px solid #deedf7;
+  border-top: 10px solid #ffffff;
   border-left: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid transparent;
   position: absolute;
-  right: 10px;
-  top: 1px;
- */ 
+  right: 3px;
+  top: 9px;
 }
+
 .localizationTool img,
 .localizationTool div {
   display: inline;
