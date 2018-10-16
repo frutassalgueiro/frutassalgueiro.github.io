@@ -796,7 +796,8 @@
 */
   position: relative;
   width: 150px;
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .localizationTool .ltool-dropdown-label {
   /*
