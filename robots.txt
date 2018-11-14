@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /pruebas.html
+Sitemap: http://frutassalgueiro.com/sitemap.xml
