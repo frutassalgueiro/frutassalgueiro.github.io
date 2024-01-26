@@ -188,7 +188,7 @@ $("#widget").localizationTool({
        },
        "Consulta nuestras cestas" : {
            gl_ES : "Consulta as nosas cestas",
-           en_GB : "Query our baskets",
+           en_GB : "Take a look our baskets",
             de_DE : "Sieh dir unsere Körbe an",
             pt_PT : "Olhe nossas cestas"
        },
