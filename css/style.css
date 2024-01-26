@@ -9,7 +9,10 @@ html, body {
   width: 400px;  
 }
 
-.galleria{ max-width: 600px; height: 500px; background: rgb(240, 255, 200);}
+.galleria{ 
+	max-width: 600px;
+ height: 500px; background: rgb(240, 255, 200);}
+
 
 .lead{
 	text-align : justify;
