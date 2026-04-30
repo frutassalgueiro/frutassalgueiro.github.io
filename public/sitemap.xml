@@ -6,9 +6,10 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://frutassalgueiro.com/</loc>
-  <lastmod>2018-11-14T15:55:37+00:00</lastmod>
+  <loc>https://frutassalgueiro.com/</loc>
+  <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
 </url>
 
 
