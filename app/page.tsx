@@ -1,4 +1,4 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Navbar } from '@/components/navbar';
 import { SectionTitle } from '@/components/section-title';
