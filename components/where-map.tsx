@@ -1,11 +1,23 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState } from 'react';
 import { marketLocations } from '@/lib/market-locations';
+import { Locale } from '@/lib/i18n';
 
-const weekdays = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+const weekdayByLocale: Record<Locale, string[]> = {
+  es: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+  gl: ['Luns', 'Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'],
+  en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+  pt: ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado']
+};
 
-export function WhereMap() {
+type WhereMapProps = {
+  locale: Locale;
+  routeWeeklyLabel: string;
+  howToGetThereLabel: string;
+};
+
+export function WhereMap({ locale, routeWeeklyLabel, howToGetThereLabel }: WhereMapProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const active = marketLocations[activeIndex];
@@ -14,13 +26,16 @@ export function WhereMap() {
     [active.lat, active.lng]
   );
 
+  const weekdays = weekdayByLocale[locale];
+  const activeIndexes = active.days;
+
   return (
     <div className="mt-6 grid gap-5 lg:grid-cols-[1.1fr_1.4fr]">
       <div className="card p-5">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">Ruta semanal</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">{routeWeeklyLabel}</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          {weekdays.map((day) => {
-            const activeDay = active.days.includes(day);
+          {weekdays.map((day, index) => {
+            const activeDay = activeIndexes.includes(index);
             return (
               <span
                 key={day}
@@ -49,7 +64,7 @@ export function WhereMap() {
                 }`}
               >
                 <p className="font-semibold text-leaf">{location.name}</p>
-                <p className="mt-1 text-sm text-neutral-700">{location.schedule}</p>
+                <p className="mt-1 text-sm text-neutral-700">{location.schedule[locale]}</p>
               </button>
             );
           })}
@@ -72,14 +87,14 @@ export function WhereMap() {
               </svg>
               {active.name}
             </p>
-            <p className="mt-1 text-xs text-neutral-700">{active.schedule}</p>
+            <p className="mt-1 text-xs text-neutral-700">{active.schedule[locale]}</p>
             <a
               href={active.mapUrl}
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-block text-xs font-semibold text-red-600 hover:underline"
             >
-              Cómo llegar
+              {howToGetThereLabel}
             </a>
           </div>
         </div>

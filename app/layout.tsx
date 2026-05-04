@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 
@@ -13,44 +13,58 @@ const roboto = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://frutassalgueiro.com'),
+  manifest: '/site.webmanifest',
   title: {
-    default: 'Frutas Salgueiro | Fruta fresca en O Salnés',
+    default: 'Frutas Salgueiro | Fruta fresca en O Salnes',
     template: '%s | Frutas Salgueiro'
   },
   description:
-    'Frutas Salgueiro: fruta fresca, cestas personalizadas y mesas para eventos en O Salnés (Galicia). Atención cercana y calidad diaria.',
+    'Frutas Salgueiro: fruta fresca, cestas personalizadas y mesas para eventos en O Salnes (Galicia). Atencion cercana y calidad diaria.',
   keywords: [
-    'frutas en A Coruña',
     'frutas en Galicia',
-    'fruta fresca O Salnés',
+    'fruta fresca O Salnes',
     'proveedor fruta local',
-    'distribución fruta Galicia',
+    'distribucion fruta Galicia',
     'cestas de fruta regalo',
     'mesas de fruta para eventos',
     'Frutas Salgueiro'
   ],
   alternates: {
-    canonical: '/'
+    canonical: '/es',
+    languages: {
+      es: '/es',
+      gl: '/gl',
+      en: '/en',
+      pt: '/pt',
+      'x-default': '/es'
+    }
   },
   robots: {
     index: true,
     follow: true
   },
   openGraph: {
-    title: 'Frutas Salgueiro | Fruta fresca en O Salnés',
+    title: 'Frutas Salgueiro | Fruta fresca en O Salnes',
     description:
       'Proveedor local de fruta fresca, cestas y mesas para eventos en Cambados, Portonovo, Dena y O Grove.',
-    url: 'https://frutassalgueiro.com',
+    url: 'https://frutassalgueiro.com/es',
     siteName: 'Frutas Salgueiro',
     locale: 'es_ES',
-    images: ['/img/portada.webp'],
+    images: [
+      {
+        url: '/img/portada.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Frutas Salgueiro'
+      }
+    ],
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Frutas Salgueiro | Fruta fresca en O Salnés',
+    title: 'Frutas Salgueiro | Fruta fresca en O Salnes',
     description:
-      'Fruta fresca, cestas personalizadas y mesas para eventos en la comarca do Salnés.',
+      'Fruta fresca, cestas personalizadas y mesas para eventos en la comarca do Salnes.',
     images: ['/img/portada.webp']
   }
 };
