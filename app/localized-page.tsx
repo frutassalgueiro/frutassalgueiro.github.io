@@ -39,18 +39,32 @@ const baseImages = {
   tips: ['/img/merienda.webp', '/img/frutas-acidas.webp', '/img/frutas-dulces.webp', '/img/guarnicion.webp', '/img/ensalada.webp', '/img/nevera.webp']
 };
 
+const prices = {
+  basketSmall: '25',
+  basketSkewersLarge: '60',
+  basketMedium: '35',
+  basketSkewersMedium: '50',
+  eventSmall: '300',
+  eventMedium: '500',
+  eventLarge: '800'
+} as const;
+
+function euro(amount: string, prefix = false) {
+  return prefix ? `€${amount}` : `${amount}€`;
+}
+
 const localizedContent: Record<Locale, LocalizedContent> = {
   es: {
     basketItems: [
-      { image: baseImages.basket[0], alt: 'cesta pequena fruta', title: 'Cesta pequeña - 25€', description: 'Regalo saludable, original y personalizado con producto de máxima calidad.' },
-      { image: baseImages.basket[1], alt: 'cesta brochetas', title: 'Centro de brochetas - 60€', description: 'Consulta con nuestro personal para encargarla en la forma y tamaño que prefieras.' },
-      { image: baseImages.basket[2], alt: 'cesta mediana fruta', title: 'Cesta mediana - 35€', description: 'Una opción de regalo rica, saludable y totalmente personalizable.' },
-      { image: baseImages.basket[3], alt: 'centro brochetas', title: 'Centro de brochetas - 50€', description: 'Preparaciones por encargo con fruta fresca seleccionada.' }
+      { image: baseImages.basket[0], alt: 'cesta pequena fruta', title: `Cesta pequeña - ${euro(prices.basketSmall)}`, description: 'Regalo saludable, original y personalizado con producto de máxima calidad.' },
+      { image: baseImages.basket[1], alt: 'cesta brochetas', title: `Centro de brochetas - ${euro(prices.basketSkewersMedium)}`, description: 'Consulta con nuestro personal para encargarla en la forma y tamaño que prefieras.' },
+      { image: baseImages.basket[2], alt: 'cesta mediana fruta', title: `Cesta mediana - ${euro(prices.basketMedium)}`, description: 'Una opción de regalo rica, saludable y totalmente personalizable.' },
+      { image: baseImages.basket[3], alt: 'centro brochetas', title: `Centro de brochetas - ${euro(prices.basketSkewersLarge)}`, description: 'Preparaciones por encargo con fruta fresca seleccionada.' }
     ],
     eventItems: [
-      { image: baseImages.event[0], alt: 'mesa fruta pequena', title: 'Mesa pequeña - Desde 300€', description: 'Para bodas, bautizos, comuniones y cumpleaños.' },
-      { image: baseImages.event[1], alt: 'mesa fruta mediana', title: 'Mesa mediana - Desde 500€', description: 'Diseñamos mesas para cada tipo de ocasión.' },
-      { image: baseImages.event[2], alt: 'mesa fruta grande', title: 'Mesa grande - Desde 800€', description: 'Fruta fresca para cerrar cualquier banquete con calidad.' }
+      { image: baseImages.event[0], alt: 'mesa fruta pequena', title: `Mesa pequeña - Desde ${euro(prices.eventSmall)}`, description: 'Para bodas, bautizos, comuniones y cumpleaños.' },
+      { image: baseImages.event[1], alt: 'mesa fruta mediana', title: `Mesa mediana - Desde ${euro(prices.eventMedium)}`, description: 'Diseñamos mesas para cada tipo de ocasión.' },
+      { image: baseImages.event[2], alt: 'mesa fruta grande', title: `Mesa grande - Desde ${euro(prices.eventLarge)}`, description: 'Fruta fresca para cerrar cualquier banquete con calidad.' }
     ],
     smoothies: [
       { image: baseImages.smoothie[0], alt: 'smoothie sandia', title: 'Sandía', description: '2 tazas de sandía, 1 manzana, 1 pera, 1 puñado de espinaca fresca, hojas de menta al gusto, leche vegetal de avellana opcional' },
@@ -62,8 +76,8 @@ const localizedContent: Record<Locale, LocalizedContent> = {
     ],
     tips: [
       { image: baseImages.tips[0], alt: 'acompanar comidas', title: 'Mejor solas que mal acompañadas', description: 'Consumir las frutas fuera de las comidas, a media mañana o a media tarde es lo ideal.' },
-      { image: baseImages.tips[1], alt: 'frutas acidas dulces', title: 'Frutas ácidas o semi-ácidas por la mañana', description: 'Piña, ciruela, mora, frambuesa, naranja, limón, fresas, mandarina, tomate, uva y manzana verde, entre otras.' },
-      { image: baseImages.tips[2], alt: 'frutas dulces', title: 'Frutas dulces por la mañana o por la tarde', description: 'Melón, plátano, sandía, manzana golden, ciruelas, uvas, granada, pera conferencia y más.' },
+      { image: baseImages.tips[1], alt: 'frutas acidas dulces', title: 'Frutas ácidas o semi-ácidas: por la mañana', description: 'Piña, ciruela, mora, frambuesa, naranja, limón, fresas, mandarina, tomate, uva y manzana verde, entre otras.' },
+      { image: baseImages.tips[2], alt: 'frutas dulces', title: 'Frutas dulces: por la mañana o por la tarde', description: 'Melón, plátano, sandía, manzana golden, ciruelas, uvas, granada, pera conferencia y más.' },
       { image: baseImages.tips[3], alt: 'frutas acidas', title: 'Acompañante', description: 'Combina proteínas, carbohidratos y legumbres con verduras crudas o cocidas para mejorar el equilibrio de la comida.' },
       { image: baseImages.tips[4], alt: 'frutas ensalada', title: 'Complemento', description: 'Piña, kiwi, fresa o naranja en ensaladas aportan color y un toque fresco y tropical.' },
       { image: baseImages.tips[5], alt: 'frutas nevera', title: 'Conservación', description: 'El frigorífico solo cuando es necesario. Sacar fruta y verdura antes de consumir mejora sabor y textura.' }
@@ -83,15 +97,15 @@ const localizedContent: Record<Locale, LocalizedContent> = {
   },
   gl: {
     basketItems: [
-      { image: baseImages.basket[0], alt: 'cesta pequena froita', title: 'Cesta pequena - 25€', description: 'Agasallo saudable, orixinal e personalizado con produto de máxima calidade.' },
-      { image: baseImages.basket[1], alt: 'cesta brochetas', title: 'Centro de brochetas - 60€', description: 'Consulta co noso persoal para encargala coa forma e tamaño que prefiras.' },
-      { image: baseImages.basket[2], alt: 'cesta mediana froita', title: 'Cesta mediana - 35€', description: 'Unha opción de agasallo rica, saudable e totalmente personalizable.' },
-      { image: baseImages.basket[3], alt: 'centro brochetas', title: 'Centro de brochetas - 50€', description: 'Preparacións por encargo con froita fresca seleccionada.' }
+      { image: baseImages.basket[0], alt: 'cesta pequena froita', title: `Cesta pequena - ${euro(prices.basketSmall)}`, description: 'Agasallo saudable, orixinal e personalizado con produto de máxima calidade.' },
+      { image: baseImages.basket[1], alt: 'cesta brochetas', title: `Centro de brochetas - ${euro(prices.basketSkewersLarge)}`, description: 'Consulta co noso persoal para encargala coa forma e tamaño que prefiras.' },
+      { image: baseImages.basket[2], alt: 'cesta mediana froita', title: `Cesta mediana - ${euro(prices.basketMedium)}`, description: 'Unha opción de agasallo rica, saudable e totalmente personalizable.' },
+      { image: baseImages.basket[3], alt: 'centro brochetas', title: `Centro de brochetas - ${euro(prices.basketSkewersMedium)}`, description: 'Preparacións por encargo con froita fresca seleccionada.' }
     ],
     eventItems: [
-      { image: baseImages.event[0], alt: 'mesa froita pequena', title: 'Mesa pequena - Desde 300€', description: 'Para vodas, bautizos, comuñóns e aniversarios.' },
-      { image: baseImages.event[1], alt: 'mesa froita mediana', title: 'Mesa mediana - Desde 500€', description: 'Deseñamos mesas para cada tipo de ocasión.' },
-      { image: baseImages.event[2], alt: 'mesa froita grande', title: 'Mesa grande - Desde 800€', description: 'Froita fresca para pechar calquera banquete con calidade.' }
+      { image: baseImages.event[0], alt: 'mesa froita pequena', title: `Mesa pequena - Desde ${euro(prices.eventSmall)}`, description: 'Para vodas, bautizos, comuñóns e aniversarios.' },
+      { image: baseImages.event[1], alt: 'mesa froita mediana', title: `Mesa mediana - Desde ${euro(prices.eventMedium)}`, description: 'Deseñamos mesas para cada tipo de ocasión.' },
+      { image: baseImages.event[2], alt: 'mesa froita grande', title: `Mesa grande - Desde ${euro(prices.eventLarge)}`, description: 'Froita fresca para pechar calquera banquete con calidade.' }
     ],
     smoothies: [
       { image: baseImages.smoothie[0], alt: 'smoothie sandia', title: 'Sandía', description: '2 cuncas de sandía, 1 mazá, 1 pera, 1 puñado de espinaca fresca, follas de menta ao gusto, leite vexetal de abelá opcional' },
@@ -103,9 +117,9 @@ const localizedContent: Record<Locale, LocalizedContent> = {
     ],
     tips: [
       { image: baseImages.tips[0], alt: 'acompanar comidas', title: 'Mellor soas que mal acompañadas', description: 'Consumir a froita fóra das comidas, a media mañá ou media tarde, é o ideal.' },
-      { image: baseImages.tips[1], alt: 'froitas acidas doces', title: 'Froitas ácidas ou semiácidas pola mañá', description: 'Piña, ameixa, mora, framboesa, laranxa, limón, amorodos, mandarina, tomate, uva e mazá verde, entre outras.' },
-      { image: baseImages.tips[2], alt: 'froitas doces', title: 'Froitas doces pola mañá ou pola tarde', description: 'Melón, plátano, sandía, mazá golden, ameixas, uvas, granada, pera conferencia e máis.' },
-      { image: baseImages.tips[3], alt: 'froitas acidas', title: 'Acompañamento', description: 'Combina proteínas, hidratos e legumes con verduras crÃºas ou cocidas para mellorar o equilibrio da comida.' },
+      { image: baseImages.tips[1], alt: 'froitas acidas doces', title: 'Froitas ácidas ou semiácidas: pola mañá', description: 'Piña, ameixa, mora, framboesa, laranxa, limón, amorodos, mandarina, tomate, uva e mazá verde, entre outras.' },
+      { image: baseImages.tips[2], alt: 'froitas doces', title: 'Froitas doces: pola mañá ou pola tarde', description: 'Melón, plátano, sandía, mazá golden, ameixas, uvas, granada, pera conferencia e máis.' },
+      { image: baseImages.tips[3], alt: 'froitas acidas', title: 'Acompañamento', description: 'Combina proteínas, hidratos e legumes con verduras crúas ou cocidas para mellorar o equilibrio da comida.' },
       { image: baseImages.tips[4], alt: 'froitas ensalada', title: 'Complemento', description: 'Piña, kiwi, amorodo ou laranxa en ensaladas achegan cor e un toque fresco e tropical.' },
       { image: baseImages.tips[5], alt: 'froitas neveira', title: 'Conservación', description: 'A neveira só cando sexa necesario. Sacar froita e verdura antes de consumir mellora sabor e textura.' }
     ],
@@ -124,15 +138,15 @@ const localizedContent: Record<Locale, LocalizedContent> = {
   },
   en: {
     basketItems: [
-      { image: baseImages.basket[0], alt: 'small fruit basket', title: 'Small basket - €25', description: 'Healthy, original and customized gift with top-quality produce.' },
-      { image: baseImages.basket[1], alt: 'fruit skewers centerpiece', title: 'Fruit skewers centerpiece - €60', description: 'Talk to our team to order the shape and size you prefer.' },
-      { image: baseImages.basket[2], alt: 'medium fruit basket', title: 'Medium basket - €35', description: 'A tasty, healthy and fully customizable gift option.' },
-      { image: baseImages.basket[3], alt: 'fruit skewers center', title: 'Fruit skewers centerpiece - €50', description: 'Made-to-order preparations with selected fresh fruit.' }
+      { image: baseImages.basket[0], alt: 'small fruit basket', title: `Small basket - ${euro(prices.basketSmall, true)}`, description: 'Healthy, original and customized gift with top-quality produce.' },
+      { image: baseImages.basket[1], alt: 'fruit skewers centerpiece', title: `Fruit skewers centerpiece - ${euro(prices.basketSkewersLarge, true)}`, description: 'Talk to our team to order the shape and size you prefer.' },
+      { image: baseImages.basket[2], alt: 'medium fruit basket', title: `Medium basket - ${euro(prices.basketMedium, true)}`, description: 'A tasty, healthy and fully customizable gift option.' },
+      { image: baseImages.basket[3], alt: 'fruit skewers center', title: `Fruit skewers centerpiece - ${euro(prices.basketSkewersMedium, true)}`, description: 'Made-to-order preparations with selected fresh fruit.' }
     ],
     eventItems: [
-      { image: baseImages.event[0], alt: 'small fruit table', title: 'Small table - From €300', description: 'For weddings, baptisms, communions and birthdays.' },
-      { image: baseImages.event[1], alt: 'medium fruit table', title: 'Medium table - From €500', description: 'We design fruit tables for every kind of event.' },
-      { image: baseImages.event[2], alt: 'large fruit table', title: 'Large table - From €800', description: 'Fresh fruit to close any celebration with quality.' }
+      { image: baseImages.event[0], alt: 'small fruit table', title: `Small table - From ${euro(prices.eventSmall, true)}`, description: 'For weddings, baptisms, communions and birthdays.' },
+      { image: baseImages.event[1], alt: 'medium fruit table', title: `Medium table - From ${euro(prices.eventMedium, true)}`, description: 'We design fruit tables for every kind of event.' },
+      { image: baseImages.event[2], alt: 'large fruit table', title: `Large table - From ${euro(prices.eventLarge, true)}`, description: 'Fresh fruit to close any celebration with quality.' }
     ],
     smoothies: [
       { image: baseImages.smoothie[0], alt: 'watermelon smoothie', title: 'Watermelon', description: '2 cups watermelon, 1 apple, 1 pear, 1 handful fresh spinach, mint leaves to taste, optional hazelnut plant milk' },
@@ -144,8 +158,8 @@ const localizedContent: Record<Locale, LocalizedContent> = {
     ],
     tips: [
       { image: baseImages.tips[0], alt: 'fruit between meals', title: 'Better alone than badly paired', description: 'Eating fruit between meals, mid-morning or mid-afternoon, is ideal.' },
-      { image: baseImages.tips[1], alt: 'acidic fruits', title: 'Acidic or semi-acidic fruits in the morning', description: 'Pineapple, plum, blackberry, raspberry, orange, lemon, strawberries, tangerine, tomato, grapes and green apple, among others.' },
-      { image: baseImages.tips[2], alt: 'sweet fruits', title: 'Sweet fruits in the morning or afternoon', description: 'Melon, banana, watermelon, golden apple, plums, grapes, pomegranate, conference pear and more.' },
+      { image: baseImages.tips[1], alt: 'acidic fruits', title: 'Acidic or semi-acidic fruits: in the morning', description: 'Pineapple, plum, blackberry, raspberry, orange, lemon, strawberries, tangerine, tomato, grapes and green apple, among others.' },
+      { image: baseImages.tips[2], alt: 'sweet fruits', title: 'Sweet fruits: in the morning or afternoon', description: 'Melon, banana, watermelon, golden apple, plums, grapes, pomegranate, conference pear and more.' },
       { image: baseImages.tips[3], alt: 'fruit as side dish', title: 'Side pairing', description: 'Combine proteins, carbs and legumes with raw or cooked vegetables for better meal balance.' },
       { image: baseImages.tips[4], alt: 'fruit in salad', title: 'Complement', description: 'Pineapple, kiwi, strawberry or orange in salads add color and a fresh tropical touch.' },
       { image: baseImages.tips[5], alt: 'fruit fridge', title: 'Storage', description: 'Use the fridge only when needed. Taking fruit and vegetables out before serving improves flavor and texture.' }
@@ -165,15 +179,15 @@ const localizedContent: Record<Locale, LocalizedContent> = {
   },
   pt: {
     basketItems: [
-      { image: baseImages.basket[0], alt: 'cesta pequena fruta', title: 'Cesta pequena - 25€', description: 'Presente saudável, original e personalizado com produto de máxima qualidade.' },
-      { image: baseImages.basket[1], alt: 'cesta espetadas', title: 'Centro de espetadas - 60€', description: 'Fale com a nossa equipa para encomendar no formato e tamanho que preferir.' },
-      { image: baseImages.basket[2], alt: 'cesta media fruta', title: 'Cesta média - 35€', description: 'Uma opção de presente saborosa, saudável e totalmente personalizável.' },
-      { image: baseImages.basket[3], alt: 'centro espetadas', title: 'Centro de espetadas - 50€', description: 'Preparações por encomenda com fruta fresca selecionada.' }
+      { image: baseImages.basket[0], alt: 'cesta pequena fruta', title: `Cesta pequena - ${euro(prices.basketSmall)}`, description: 'Presente saudável, original e personalizado com produto de máxima qualidade.' },
+      { image: baseImages.basket[1], alt: 'cesta espetadas', title: `Centro de espetadas - ${euro(prices.basketSkewersLarge)}`, description: 'Fale com a nossa equipa para encomendar no formato e tamanho que preferir.' },
+      { image: baseImages.basket[2], alt: 'cesta media fruta', title: `Cesta média - ${euro(prices.basketMedium)}`, description: 'Uma opção de presente saborosa, saudável e totalmente personalizável.' },
+      { image: baseImages.basket[3], alt: 'centro espetadas', title: `Centro de espetadas - ${euro(prices.basketSkewersMedium)}`, description: 'Preparações por encomenda com fruta fresca selecionada.' }
     ],
     eventItems: [
-      { image: baseImages.event[0], alt: 'mesa fruta pequena', title: 'Mesa pequena - Desde 300€', description: 'Para casamentos, batizados, comunhões e aniversários.' },
-      { image: baseImages.event[1], alt: 'mesa fruta media', title: 'Mesa média - Desde 500€', description: 'Criamos mesas de fruta para cada tipo de ocasião.' },
-      { image: baseImages.event[2], alt: 'mesa fruta grande', title: 'Mesa grande - Desde 800€', description: 'Fruta fresca para encerrar qualquer evento com qualidade.' }
+      { image: baseImages.event[0], alt: 'mesa fruta pequena', title: `Mesa pequena - Desde ${euro(prices.eventSmall)}`, description: 'Para casamentos, batizados, comunhões e aniversários.' },
+      { image: baseImages.event[1], alt: 'mesa fruta media', title: `Mesa média - Desde ${euro(prices.eventMedium)}`, description: 'Criamos mesas de fruta para cada tipo de ocasião.' },
+      { image: baseImages.event[2], alt: 'mesa fruta grande', title: `Mesa grande - Desde ${euro(prices.eventLarge)}`, description: 'Fruta fresca para encerrar qualquer evento com qualidade.' }
     ],
     smoothies: [
       { image: baseImages.smoothie[0], alt: 'smoothie melancia', title: 'Melancia', description: '2 chávenas de melancia, 1 maçã, 1 pera, 1 punhado de espinafre fresco, folhas de hortelã a gosto, bebida vegetal de avelã opcional' },
@@ -185,8 +199,8 @@ const localizedContent: Record<Locale, LocalizedContent> = {
     ],
     tips: [
       { image: baseImages.tips[0], alt: 'fruta entre refeicoes', title: 'Melhor sozinhas do que mal acompanhadas', description: 'Consumir fruta fora das refeições, a meio da manhã ou da tarde, é o ideal.' },
-      { image: baseImages.tips[1], alt: 'frutas acidas', title: 'Frutas ácidas ou semiácidas de manhã', description: 'Ananás, ameixa, amora, framboesa, laranja, limão, morango, tangerina, tomate, uva e maçã verde, entre outras.' },
-      { image: baseImages.tips[2], alt: 'frutas doces', title: 'Frutas doces de manhã ou à tarde', description: 'Melão, banana, melancia, maçã golden, ameixas, uvas, romã, pera conference e mais.' },
+      { image: baseImages.tips[1], alt: 'frutas acidas', title: 'Frutas ácidas ou semiácidas: de manhã', description: 'Ananás, ameixa, amora, framboesa, laranja, limão, morango, tangerina, tomate, uva e maçã verde, entre outras.' },
+      { image: baseImages.tips[2], alt: 'frutas doces', title: 'Frutas doces: de manhã ou à tarde', description: 'Melão, banana, melancia, maçã golden, ameixas, uvas, romã, pera conference e mais.' },
       { image: baseImages.tips[3], alt: 'fruta acompanhamento', title: 'Acompanhamento', description: 'Combine proteínas, hidratos e leguminosas com legumes crus ou cozinhados para melhorar o equilíbrio da refeição.' },
       { image: baseImages.tips[4], alt: 'fruta salada', title: 'Complemento', description: 'Ananás, kiwi, morango ou laranja em saladas dão cor e um toque fresco e tropical.' },
       { image: baseImages.tips[5], alt: 'fruta frigorifico', title: 'Conservação', description: 'Use o frigorífico apenas quando necessário. Retirar fruta e legumes antes de consumir melhora o sabor e a textura.' }

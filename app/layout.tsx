@@ -14,8 +14,11 @@ const roboto = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://frutassalgueiro.com'),
   manifest: '/site.webmanifest',
+  icons: {
+    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }]
+  },
   title: {
-    default: 'Frutas Salgueiro | Fruta fresca en O Salnes',
+    default: 'Frutas Salgueiro',
     template: '%s | Frutas Salgueiro'
   },
   description:
@@ -70,9 +73,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Frutas Salgueiro',
+    url: 'https://frutassalgueiro.com/'
+  };
+
   return (
     <html lang="es">
-      <body className={roboto.variable}>{children}</body>
+      <body className={roboto.variable}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        {children}
+      </body>
     </html>
   );
 }
