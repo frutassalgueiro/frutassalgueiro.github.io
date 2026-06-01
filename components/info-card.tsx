@@ -1,14 +1,24 @@
 import Image from 'next/image';
 
+import { CARD_IMAGE_SIZES_THREE_COLUMNS } from '@/lib/image-presentation';
+
 interface InfoCardProps {
   image: string;
   alt: string;
   title: string;
   description: string;
   descriptionStyle?: 'plain' | 'ingredients';
+  sizes?: string;
 }
 
-export function InfoCard({ image, alt, title, description, descriptionStyle = 'plain' }: InfoCardProps) {
+export function InfoCard({
+  image,
+  alt,
+  title,
+  description,
+  descriptionStyle = 'plain',
+  sizes = CARD_IMAGE_SIZES_THREE_COLUMNS
+}: InfoCardProps) {
   const ingredients = description
     .split(',')
     .map((item) => item.trim())
@@ -22,7 +32,7 @@ export function InfoCard({ image, alt, title, description, descriptionStyle = 'p
           alt={alt}
           fill
           className="object-cover transition duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes={sizes}
         />
       </div>
       <h3 className="text-lg font-semibold leading-tight text-leaf">{title}</h3>

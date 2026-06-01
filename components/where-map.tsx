@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { marketLocations } from '@/lib/market-locations';
 import { Locale } from '@/lib/i18n';
+import { SUPPORT_LABEL_CLASS } from '@/lib/image-presentation';
 
 const weekdayByLocale: Record<Locale, string[]> = {
   es: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
@@ -32,7 +33,7 @@ export function WhereMap({ locale, routeWeeklyLabel, howToGetThereLabel }: Where
   return (
     <div className="mt-6 grid gap-5 lg:grid-cols-[1.1fr_1.4fr]">
       <div className="card p-5">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">{routeWeeklyLabel}</p>
+        <p className={SUPPORT_LABEL_CLASS}>{routeWeeklyLabel}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {weekdays.map((day, index) => {
             const activeDay = activeIndexes.includes(index);

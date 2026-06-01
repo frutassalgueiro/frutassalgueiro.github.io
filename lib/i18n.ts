@@ -80,7 +80,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     home: {
       heroKicker: 'Frutas Salgueiro',
       heroTitle: 'Llevando la mejor fruta a tu casa desde hace más de 30 años',
-      heroDescription: 'Selección diaria de fruta fresca para hogares, eventos y negócios de la comarca del Salnés.',
+      heroDescription: 'Selección diaria de fruta fresca para tu hogar, eventos y negocios de la comarca del Salnés.',
       ctaContact: 'Contactar',
       ctaWhatsapp: 'WhatsApp',
       basketsTitle: '¡Regala fruta!',
@@ -99,7 +99,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       smoothiesTitle: 'Smoothies',
       tipsTitle: 'Consejos',
       contactTitle: 'Contacto',
-      contactSubtitle: 'Estamos cerca de ti. Escríbenos o llámaños y te ayudamos a preparar tu pedido.',
+      contactSubtitle: 'Estamos cerca de ti. Escríbenos o llámanos y te ayudamos a preparar tu pedido.',
       directSupport: 'Atención directa',
       callNow: 'Llamar ahora',
       address: 'Dirección',
@@ -114,7 +114,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     metadata: {
       title: 'Inicio',
-      description: 'Frutas Salgueiro ofrece fruta fresca a domicílio, cestas de fruta y mesas para eventos en O Salnés, Galicia.',
+      description: 'Frutas Salgueiro ofrece fruta fresca a domicilio, cestas de fruta y mesas para eventos en O Salnés, Galicia.',
       ogDescription: 'Servicio local de fruta fresca, cestas y mesas para bodas, comuniones y celebraciones en Galicia.'
     }
   },
@@ -132,7 +132,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     home: {
       heroKicker: 'Froitas Salgueiro',
       heroTitle: 'Levando a mellor froita á túa casa desde hai máis de 30 años',
-      heroDescription: 'Selección diaria de froita fresca para fogares, eventos e negocios da comarca do Salnés.',
+      heroDescription: 'Selección diaria de froita fresca para o teu fogar, eventos e negocios da comarca do Salnés.',
       ctaContact: 'Contactar',
       ctaWhatsapp: 'WhatsApp',
       basketsTitle: 'Regala froita!',
@@ -142,7 +142,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       trustTitle: 'Confianza local que se nota',
       trustSubtitle: 'Calidade diaria, proximidade e compromiso en cada pedido.',
       eventsTitle: 'Tamén en eventos',
-      eventsSubtitle: 'Bodas, bautizos, aniversarios...',
+      eventsSubtitle: 'Vodas, bautizos, aniversarios...',
       eventsDescription:
         'Nada mellor ca unha boa peza de froita fresca despois dun bo banquete. Se queres unha para o teu próximo evento, non dubides en consultarnos.',
       whereTitle: 'Onde estamos?',
@@ -151,7 +151,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       smoothiesTitle: 'Smoothies',
       tipsTitle: 'Consellos',
       contactTitle: 'Contacto',
-      contactSubtitle: 'Estamos preto de ti. Escríbenos ou chámaños e axudámoste a preparar o teu pedido.',
+      contactSubtitle: 'Estamos preto de ti. Escríbenos ou chámanos e axudámoste a preparar o teu pedido.',
       directSupport: 'Atención directa',
       callNow: 'Chamar agora',
       address: 'Enderezo',
@@ -166,8 +166,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     metadata: {
       title: 'Inicio',
-      description: 'Froitas Salgueiro ofrece froita fresca a domicílio, cestas de froita e mesas para eventos no Salnés, Galicia.',
-      ogDescription: 'Servizo local de froita fresca, cestas e mesas para vodas, comuñóns e celebracións en Galicia.'
+      description: 'Froitas Salgueiro ofrece froita fresca a domicilio, cestas de froita e mesas para eventos no Salnés, Galicia.',
+      ogDescription: 'Servizo local de froita fresca, cestas e mesas para vodas, comunións e celebracións en Galicia.'
     }
   },
   en: {

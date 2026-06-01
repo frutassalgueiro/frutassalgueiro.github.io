@@ -6,6 +6,7 @@ import { InfoCard } from '@/components/info-card';
 import { Reveal } from '@/components/reveal';
 import { WhereMap } from '@/components/where-map';
 import { defaultLocale, dictionaries, isLocale, localeMap, type Locale } from '@/lib/i18n';
+import { CARD_IMAGE_SIZES_FOUR_COLUMNS, SUPPORT_LABEL_CLASS } from '@/lib/image-presentation';
 
 type CardItem = {
   image: string;
@@ -334,12 +335,12 @@ export default async function LocalizedPage({ locale }: { locale: Locale }) {
       <main id="inicio">
         <section className="relative overflow-hidden border-b border-neutral-200 bg-white">
           <div className="absolute inset-0">
-            <Image src="/img/portada.webp" alt="Frutas Salgueiro" fill priority className="object-cover opacity-20" />
+            <Image src="/img/portada.webp" alt="Frutas Salgueiro" fill priority fetchPriority="high" className="object-cover opacity-20" />
           </div>
           <div className="hero-glow" aria-hidden />
           <div className="container-shell relative py-20 sm:py-28">
             <Reveal>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-moss">{dict.home.heroKicker}</p>
+              <p className={`mb-3 ${SUPPORT_LABEL_CLASS}`}>{dict.home.heroKicker}</p>
               <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-leaf sm:text-6xl">{dict.home.heroTitle}</h1>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-neutral-700 sm:text-lg">{dict.home.heroDescription}</p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -358,7 +359,7 @@ export default async function LocalizedPage({ locale }: { locale: Locale }) {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {content.basketItems.map((item, index) => (
               <Reveal key={item.title} delay={index * 90}>
-                <InfoCard {...item} />
+                <InfoCard {...item} sizes={CARD_IMAGE_SIZES_FOUR_COLUMNS} />
               </Reveal>
             ))}
           </div>
@@ -455,7 +456,7 @@ export default async function LocalizedPage({ locale }: { locale: Locale }) {
               <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-emerald-100/80" aria-hidden />
               <div className="absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-emerald-50" aria-hidden />
               <div className="relative">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">{dict.home.directSupport}</p>
+                <p className={SUPPORT_LABEL_CLASS}>{dict.home.directSupport}</p>
                 <p className="mt-3 text-3xl font-bold leading-tight text-leaf">(+34) 617 384 147</p>
                 <p className="mt-3 max-w-lg text-sm text-neutral-700">{content.contactLead}</p>
                 <div className="mt-5 flex flex-wrap gap-3">
